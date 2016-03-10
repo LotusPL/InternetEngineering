@@ -29,7 +29,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div ng-view></div>
+
   <!--
   <div>Angular seed app: v<span app-version></span></div>
   -->
@@ -42,12 +42,12 @@
   <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <a href="/index.html">
+        <a href="#/News">
           Home
         </a>
       </li>
       <li>
-        <a href="#/myAccount">Moje konto</a>
+        <a href="#/MyAccount">Moje konto</a>
       </li>
       <li>
         <a href="#/news">Aktualności</a>
@@ -72,13 +72,10 @@
       </div>
       <div id='content' class="row">
         <div id="testujemy" class="col-lg-12">
-
+          <div ng-view></div>
           <!-- Zawartosc -->
 
-          Welcome to Language School website
 
-          <br>
-          Szkoła działa, strona nie ;C
 
         </div>
       </div>
@@ -102,6 +99,12 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
+  <!-- IMPORTOWAC STWORZONE STRONY -->
+
+  <script src="MyAccount/MyAccount.js"></script>
+  <script src="Login/Login.js"></script>
+<script src="News/News.js"></script>
+<script src="Register/Register.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>

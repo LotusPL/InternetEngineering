@@ -4,9 +4,11 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.MyAccount',
-  'myApp.view2',
+  'myApp.Login',
+  'myApp.News',
+  'myApp.Register',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/MyAccount.html'});
+  $routeProvider.otherwise({redirectTo: '/News'});
 }]);
